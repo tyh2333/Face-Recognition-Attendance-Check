@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.IOT_Proj1.face_check"
+    android:versionCode="2"
+    android:versionName="2.0"
+    tools:ignore="GradleOverrides">
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 写入SD卡的权限：如果你希望保存相机拍照后的照片 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读取SD卡的权限:打开相册选取图片所必须的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="face_attendance_check"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.IOT_Proj1.face_check.ForgetPassActivity" />
+        <activity android:name="com.example.IOT_Proj1.face_check.RegisActivity" />
+        <activity android:name="com.example.IOT_Proj1.face_check.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.IOT_Proj1.face_check.MainActivity" />
+        <activity
+            android:name="com.example.IOT_Proj1.face_check.UploadFaceActivity"
+            android:label="UpLoad your Face_img" />
+        <activity
+            android:name="com.example.IOT_Proj1.face_check.CheckActivity"
+            android:label="Attendance Check" />
+        <activity
+            android:name="com.example.IOT_Proj1.face_check.SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name="com.example.IOT_Proj1.face_check.DeleteActivity"
+            android:label="Delete Student info" />
+    </application>
+
+</manifest>

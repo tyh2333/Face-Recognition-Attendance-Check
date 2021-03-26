@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">科大人脸考勤系统</string>
+    <string name="user_name">user_name</string>
+    <string name="your_real_name">your real name</string>
+    <string name="upload">Upload</string>
+    <string name="only_include_letters_and_numbers">Only include letters and numbers</string>
+    <string name="real_name">real_name</string>
+    <string name="username">USERNAME</string>
+</resources>

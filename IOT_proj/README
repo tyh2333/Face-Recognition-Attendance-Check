@@ -1,0 +1,9 @@
+README:
+
+	(1) Open this project in the latest Android Studio and run;
+
+	Details are written in the Slides and Reports;
+
+	(2) install app-x86_64-debug.apk on a Android Device:
+
+	IOT_proj/app/build/outputs/apk/debug/app-x86_64-debug.apk 
